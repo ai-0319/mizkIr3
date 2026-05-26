@@ -1,0 +1,271 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    font-family: "HG丸ｺﾞｼｯｸM-PRO";
+}
+#darkCover{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+    z-index: 4;
+}
+
+#headerAria{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background-color: skyblue;
+    top: 0%;
+    left: 0%;
+}
+#score{
+    position: absolute;
+    font-size: 3vw;
+    margin: 0;
+    top: 50%;
+    left: 75%;
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width:480px){
+    #score{ font-size: 4vw; }
+}
+.menuButton{
+    position: absolute;
+    top: 25%;
+    width: 10%;
+    height: 50%;
+    border-radius: 50%;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: "HG丸ｺﾞｼｯｸM-PRO";
+    background-color: #EEEEEE;
+    z-index: 3;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: pink #90FFFF #90ffff pink;
+}
+.menuButton:hover{
+    border: solid black 2px;
+    scale: 1.2;
+}
+#easy{ left: 1%; background-color: #FFFF99; }
+#nomal{ left: 12%; }
+#hard{ left: 23%; }
+#start{ left: 38%; }
+#stop{ left: 50%; background-color: #FFFF99; }
+#reset{ left: 62%;}
+#gameExit{ width: 15%; height: 80%; top: -15%; left: 80%; }
+@media screen and (max-width:480px){
+    .menuButton{ width: 11vw; height: 11vw; font-size: 2.5vw;}
+    .menuButton:hover{ scale: 1;}
+}
+
+#mainAria{
+    position: relative;
+    background-image: url("../image/tsuchi.jpeg");
+    width: 100%;
+    height: 80%;
+}
+#startPopUp{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    height: 40%;
+    background-color: rgba(255,127,191,0.6);
+    border: 3px rgba(255,127,191,0.8) solid;
+    z-index: 5;
+    text-align: center;
+}
+#title{
+    position: absolute;
+    color: #EEEEEE;
+    font-size: 3vw;
+    white-space: nowrap;
+    margin: 0;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 6;
+}
+.caption{
+    position: absolute;
+    color: #EEEEEE;
+    font-size: 1.5vw;
+    white-space: nowrap;
+    margin: 0;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 6;
+}
+#description1{ top: 50%; }
+#description2{ top: 65%; }
+
+@media screen and (max-width:480px){
+    #startPopUp{ width: 70%; }
+    #title{ font-size: 6vw; }
+    .caption{ font-size: 3vw; }
+}
+#time{
+    position: absolute;
+    font-size: 3vw;
+    margin: 0;
+    padding: 3px;
+    top: 2%;
+    left: 75%;
+    color: #EEEEEE;
+    background-color: rgba(0,0,0,0.2);
+    border: 3px rgba(0,0,0,0.3) solid;
+}
+@media screen and (max-width:480px){
+    #time{ font-size: 4vw; left: 70%;}
+}
+.circle{
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    background-color: black;
+    border-radius: 50%;
+}
+.mogura{
+    position: absolute;
+    width: 8vw;
+    display: none;
+}
+#circle1{ top: 20%; left: 10%; }
+#circle2{ top: 70%; left: 20%; }
+#circle3{ top: 20%; left: 40%; }
+#circle4{ top: 30%; left: 50%; }
+#circle5{ top: 80%; left: 60%; }
+#circle6{ top: 20%; left: 70%; }
+#circle7{ top: 60%; left: 85%; }
+
+#mogura1{ top: 20%; left: 10%; }
+#mogura2{ top: 70%; left: 20%; }
+#mogura3{ top: 20%; left: 40%; }
+#mogura4{ top: 30%; left: 50%; }
+#mogura5{ top: 80%; left: 60%; }
+#mogura6{ top: 20%; left: 70%; }
+#mogura7{ top: 60%; left: 85%; }
+
+@media screen and (max-width:480px){
+    .circle{ width: 20vw; height: 20vw; }
+    .mogura{ width: 20vw; }
+    #circle1{ top: 10%; left: 10%; }
+    #circle2{ top: 70%; left: 20%; }
+    #circle3{ top: 20%; left: 40%; }
+    #circle4{ top: 50%; left: 50%; }
+    #circle5{ top: 80%; left: 60%; }
+    #circle6{ top: 20%; left: 70%; }
+    #circle7{ top: 60%; left: 80%; }
+
+    #mogura1{ top: 10%; left: 10%; }
+    #mogura2{ top: 70%; left: 20%; }
+    #mogura3{ top: 20%; left: 40%; }
+    #mogura4{ top: 50%; left: 50%; }
+    #mogura5{ top: 80%; left: 60%; }
+    #mogura6{ top: 20%; left: 70%; }
+    #mogura7{ top: 60%; left: 80%; }
+}
+
+#resultPopUp{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    height: 40%;
+    background-color: rgba(255,127,191,0.6);
+    border: 3px rgba(255,127,191,0.8) solid;
+    display: none;
+    z-index: 5;
+    text-align: center;
+}
+#resultText{
+    position: absolute;
+    color: #EEEEEE;
+    font-size: 3vw;
+    white-space: nowrap;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 6;
+}
+#retry{
+    position: absolute;
+    font-size: 2vw;
+    font-family: "HG丸ｺﾞｼｯｸM-PRO";
+    background-color: #EEEEEE;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 77%;
+    padding: 5px;
+    border-radius: 10px;
+    z-index: 6;
+}
+#retry:hover{
+    border: solid black 2px;
+    background-color: #AAAAAA;
+}
+@media screen and (max-width:480px){
+    #resultPopUp{ width: 70%; }
+    #resultText{ font-size: 6vw; }
+    #retry{ font-size: 3vw; }
+}
+
+#footerAria,#slidetext{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background-color: #836953;
+}
+#slideAria{
+    position: relative;
+}
+.moveText{
+    position: absolute;
+    margin: 10px;
+    font-size: 5vw;
+    font-weight: bold;
+    -webkit-text-stroke: 2px white;
+    paint-order: stroke;
+}
+@media screen and (max-width:480px){
+    .moveText{ font-size: 8vw; }
+}
+#moveText1{ left: 0%; }
+#moveText2{ left: 50%; }
+#moveText3{ left: 100%; }
+
+@keyframes moguraUp{
+    from{ scale: 0%;}
+    to{ scale: 100%;}
+}
+@keyframes moguraDown{
+    from{ scale: 100%;}
+    to{ scale: 0%;}
+}
+
+@keyframes moguraUpDown{
+    0%{ scale: 0%; }
+    30%{ scale: 100%;}
+    70%{ scale: 100%;}
+    100%{ scale: 0%;}
+}
+@keyframes slide{
+    from{ left: 0%;}
+    to{ left: -50%; }
+}

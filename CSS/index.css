@@ -1,0 +1,78 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+#mainBox{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #7FFFFF;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.upa{
+    position: absolute;
+    width: 40%;
+    transform: translate(-50%,-50%);
+    --movexOld: 50%;
+    --movexNew: 50%;
+    --moveyOld: 50%;
+    --moveyNew: 50%;
+    animation: none;
+    z-index: 3;
+    border-radius: 50%;
+    display: none;
+    transform-origin: 50% 50%;
+}
+#upa1{
+    display: block;
+    top: 50%;
+    left: 50%;
+}
+
+button{
+    position: absolute;
+    width: 15%;
+    height: 7%;
+    transform: translateX(-50%);
+    font-family: "HG丸ｺﾞｼｯｸM-PRO";
+    font-weight: bold;
+    border-radius: 50%;
+    border-color: blue red red blue;
+}
+#moveButton1{ top: 5%; left: 20%; }
+#moveButton2{ top: 5%; left: 40%; }
+#moveButton3{ top: 5%; left: 60%; }
+#moveButton4{ top: 5%; left: 80%; }
+#stopButton{ top: 15%; left: 50%; }
+
+#testText{
+    position: absolute;
+    font-size: 3vw;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes slide{
+    0%{
+        top: var(--moveyOld);
+        left: var(--movexOld);
+        transform: translate(-50%,-50%);
+    }
+    100%{
+        top: var(--moveyNew);
+        left: var(--movexNew);
+        transform: translate(-50%,-50%);
+    }
+}
+
+@keyframes zoom{
+    0%{ scale: 0%; opacity: 0;}
+    50%{ scale: 40%; opacity: 1;}
+    100%{ scale: 0%; opacity: 0;}
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mogura</title>
+    <link rel="stylesheet" href="CSS/mogura.css">
+</head>
+<body>
+<div id="darkCover"></div>
+    <div id="headerAria">
+        <button class="menuButton" id="easy">簡単</button>
+        <button class="menuButton" id="nomal">普通</button>
+        <button class="menuButton" id="hard">難しい</button>
+        <button class="menuButton" id="start">開始</button>
+        <button class="menuButton" id="stop">停止</button>
+        <button class="menuButton" id="reset">リセット</button>
+        <p id="score">スコア：0点</div>
+    </div>
+    <div id="mainAria">
+        <div id="startPopUp">
+            <p id="title">もぐらたたき</p>
+            <p class="caption" id="description1">出てくるモグラをたたこう</p>
+            <p class="caption" id="description2">難易度を選択して開始ボタンを押したらスタート</p>
+        </div>
+        <p id="time"></p>
+        <div class="circle" id="circle1"></div>
+        <img src="image/mogura.png" class="mogura" id="mogura1">
+        <div class="circle" id="circle2"></div>
+        <img src="image/mogura.png" class="mogura" id="mogura2">
+        <div class="circle" id="circle3"></div>
+        <img src="image/mogura.png" class="mogura" id="mogura3">
+        <div class="circle" id="circle4"></div>
+        <img src="image/mogura.png" class="mogura" id="mogura4">
+        <div class="circle" id="circle5"></div>
+        <img src="image/mogura.png" class="mogura" id="mogura5">
+        <div class="circle" id="circle6"></div>
+        <img src="image/mogura.png" class="mogura" id="mogura6">
+        <div class="circle" id="circle7"></div>
+        <img src="image/mogura.png" class="mogura" id="mogura7">
+        <div id="resultPopUp">
+            <p id="resultText"></p>
+            <button id="retry">もういちど</button>
+        </div>
+    </div>
+    <div id="footerAria">
+    <button class="menuButton" id="gameExit" onclick="location.href='index.html'">終了</button>
+        <div id="slideAria">
+            <p class="moveText" id="moveText1">STOP</p>
+            <p class="moveText" id="moveText2">STOP</p>
+            <p class="moveText" id="moveText3">STOP</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="JS/mogura.js"></script>
+</body>
+</html>

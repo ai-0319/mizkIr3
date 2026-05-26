@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+body{
+    background-color: aliceblue;
+    margin: 30px;
+}
+
+p{
+  margin: 5px;  
+}
+
+h2{
+    margin: 10px;
+}
+
+div{
+    background-color: aqua;
+    text-align: center;
+}
+
+table, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+
+#gothic{
+    color: red;
+    font-family: "メイリオ","sans-serif";
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#mintyo{
+    color: blue;
+    font-family: "Yu Mincho","serif";
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#text-aline{
+    margin: 0;
+    width: 300px;
+}
+#left{
+    text-align: left;
+}
+#center{
+    text-align: center;
+}
+#right{
+    text-align: right;
+}
+#justify{
+    text-align: justify;
+}
+
+a:link{color: red;}
+a:visited{color: blue;}
+a:hover{
+    color: green;
+    font-weight: bold;
+}
+a:active{color: red;}
+a{text-decoration: none;}
+
+#onclickTest{
+    position: relative;
+    width: 200px;
+    height: 100px;
+}
+#changeText{
+    position: absolute;
+    top: 5%;
+    left: 15%;
+}
+#redButton{
+    position: absolute;
+    width: 40%;
+    height: 25%;
+    right: 5%;
+    bottom: 10%;
+}
+#blueButton{
+    position: absolute;
+    width: 40%;
+    height: 25%;
+    left: 5%;
+    bottom: 10%;
+}
+#changeButton{
+    position: absolute;
+    width: 40%;
+    height: 25%;
+    left: 30%;
+    bottom: 40%;
+}
+#outputList{ list-style: none; }

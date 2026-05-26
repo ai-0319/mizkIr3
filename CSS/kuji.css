@@ -1,0 +1,212 @@
+html{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-image: url("../image/jinja_hiru.jpg");
+    background-repeat: repeat-y;
+    background-position: left top;
+    background-attachment: auto;
+    background-size: 100%;
+    background-color: #bcffdd;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: -2;
+}
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 130%;
+  background: rgba(188, 255, 221, 0.4); 
+  pointer-events: none;
+  z-index: -1;
+}
+
+#headerAria{
+    width: 100%;
+    height: 20%;
+    top: 0%;
+    left: 0%;
+    position: relative;
+}
+#headerDia{
+    width: 20%;
+    height: 1%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.diamond{
+    position: absolute;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+#diamond1{ left: 0%; }
+#diamond2{ left: 30%; }
+#diamond3{ right: 30%; }
+#diamond4{ right: 0%; }
+
+#headerName{
+    background-color: aliceblue;
+    position: absolute;
+    width: 60%;
+    height: 60px;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px double red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#omikuji{
+    position: absolute;
+    font-size: 40px;
+    transform: rotate(90deg);
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+    font-family: "Yu Mincho";
+}
+
+#mainAria{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#kujiAria{
+    background-color: aliceblue;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px double red;
+    z-index: 2;
+}
+#omikujiImage{
+    position: absolute;
+    width: 30%;
+    top: 10%;
+    left: 10%;
+    z-index: 3;
+}
+#resultAria{
+    background-color: aliceblue;
+    position: absolute;
+    width: 100px;
+    height: 30%;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 3px solid red;
+    border-right: 3px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+#resultText{
+    position: absolute;
+    font-size: 80px;
+    font-family: "Yu Mincho";
+    writing-mode: vertical-rl;
+    font-weight: bold;
+    z-index: 3;
+}
+
+#imageAria{
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#death1{
+    position: absolute;
+    left: 65%;
+    top: 20%;
+    width: 25%;
+    display: none;
+    animation: rotateAnimation 2s linear infinite;
+    z-index: 3;
+}
+#death2{
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    width: 20%;
+    display: none;
+    z-index: 2;
+    animation: sizeAnimation 1s linear infinite;
+    z-index: 3;
+}
+#death3{
+    position: absolute;
+    left: 60%;
+    top: 70%;
+    width: 30%;
+    display: none;
+    animation: moveAnimation 1.5s linear infinite;
+    z-index: 3;
+}
+
+#kakapo{
+    position: absolute;
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    z-index: 3;
+}
+
+#death4{
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    /* display: none; */
+}
+#footerAria{
+    width: 100%;
+    height: 10%;
+}
+#footerDia{
+    width: 20%;
+    height: 1%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes rotateAnimation{
+    from { transform: rotate(0deg); }
+    to{transform: rotate(360deg);}
+}
+
+@keyframes sizeAnimation {
+    0%{ scale: 180%; }
+    50%{ scale: 100%; }
+    100%{ scale: 180%; }
+}
+
+@keyframes moveAnimation {
+    0%{ left: 65%; }
+    50%{ left: 5%; }
+    100%{ left: 65%; }
+}

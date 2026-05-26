@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/zangai.css">
+</head>
+<body>
+    <h1>indexのページはそのうちちゃんとつくります</h1>
+    <button onclick="location.href='mogura.html'">もぐらたたき</button>
+    <button onclick="location.href='kuji.html'">おみくじ</button>
+    <h2>文字装飾</h2>
+    <p>&lt;i&gt;&lt;/i&gt;　で囲むと<i>イタリック(斜体)</i>になります</p>
+    <p>&lt;b&gt;&lt;/b&gt;　で囲むと<b>太字</b>になります</p>
+    <p>&lt;u&gt;&lt;/u&gt;　で囲むと<u>下線</u>が引けます</p>
+    <p>&lt;del&gt;&lt;/del&gt;　で囲むと<del>削除線</del>が引けます</p>
+    <p><i><u><b><del>複数の要素の重ね掛けも可能</del></b></u></i></p>
+    <br>
+    <h2>ハイパーリンク</h2>
+    <p>&lt;a href="アドレス名"&gt;&lt;a&gt;　でハイパーリンクの作成</p>
+    <a href="https://www.google.com/?hl=ja">google</a>
+    <br>
+
+    <h2>リスト</h2>
+    <p><b>&lt;ul&gt;順番なしリスト&lt;/ul&gt;</b></p>
+    <div>
+    <p>&lt;ul&gt;</p>
+    <p>　　&lt;li&gt;山名&lt;/li&gt;</p>
+    <p>　　&lt;li&gt;一色&lt;/li&gt;</p>
+    <p>　　&lt;li&gt;京極&lt;/li&gt;</p>
+    <p>　　&lt;li&gt;赤松&lt;/li&gt;</p>
+    <p>&lt;/ul&gt;</p>
+    </div>
+    <ul>
+        <li>山名</li>
+        <li>一色</li>
+        <li>京極</li>
+        <li>赤松</li>
+    </ul>
+    <p><b>&lt;ol&gt;順番ありリスト&lt;/ol&gt;</b></p>
+    <div>
+    <p>&lt;ol&gt;</p>
+    <p>　　&lt;li&gt;尊氏&lt;/li&gt;</p>
+    <p>　　&lt;li&gt;義詮&lt;/li&gt;</p>
+    <p>　　&lt;li&gt;義光&lt;/li&gt;</p>
+    <p>&lt;/ol&gt;</p>
+    </div>
+    <ol>
+        <li>尊氏</li>
+        <li>義詮</li>
+        <li>義光</li>
+    </ol>
+
+    <p><b>&lt;dl&gt;定義リスト&lt;/dl&gt;</b></p>
+    <div>
+    <p>&lt;dl&gt;</p>
+    <p>　　&lt;dt&gt;項目名&lt;/dt&gt;</p>
+    <p>　　&lt;dd&gt;説明文&lt;/dd&gt;</p>
+    <p>　　&lt;dt&gt;室町時代&lt;/dt&gt;</p>
+    <p>　　&lt;dd&gt;1338年~1573年&lt;/dd&gt;</p>
+    <p>　　&lt;dt&gt;安土桃山時代&lt;/dt&gt;</p>
+    <p>　　&lt;dd&gt;1573年~1603年&lt;/dd&gt;</p>
+    <p>&lt;/dl&gt;</p>
+    </div>
+    <dl>
+        <dt>項目名</dt>
+        <dd>説明文</dd>
+        <dt>室町時代</dt>
+        <dd>1338年~1573年</dd>
+        <dt>安土桃山時代</dt>
+        <dd>1573年~1603年</dd>
+    </dl>
+    <br>
+    <h2>テーブル</h2>
+    <div>
+        <p>&lt;table&gt;</p>
+        <p>　　&lt;caption&gt;テーブルの名前&lt;/caption&gt;</p>
+        <p>　　&lt;tr&gt;</p>
+        <p>　　　　&lt;td&gt;テーブルの要素１&lt;/td&gt;</p>
+        <p>　　　　&lt;td&gt;テーブルの要素２&lt;/td&gt;</p>
+        <p>　　　　&lt;td&gt;テーブルの要素３&lt;/td&gt;</p>
+        <p>　　&lt;/tr&gt;</p>
+        <p>　　&lt;tr&gt;</p>
+        <p>　　　　&lt;td&gt;テーブルの要素４&lt;/td&gt;</p>
+        <p>　　　　&lt;td&gt;テーブルの要素５&lt;/td&gt;</p>
+        <p>　　　　&lt;td&gt;テーブルの要素６&lt;/td&gt;</p>
+        <p>　　&lt;/tr&gt;</p>
+        <p>&lt;/table&gt;</p>
+    </div>
+    <table>
+        <caption>カレンダー</caption>
+        <tr>
+            <td>5月</td>
+            <td>SUM</td>
+            <td>MON</td>
+            <td>TUE</td>
+            <td>WED</td>
+            <td>THU</td>
+            <td>FRI</td>
+            <td>STU</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+    <br>
+
+    <h2>セルの結合</h2>
+    <div>
+        <p>&lt;tr colspan="行数"&gt;&lt;/tr&gt;：行方向の結合</p>
+        <p><b>&lt;tr colspan="2"&gt;旧国名&lt;/tr&gt;</b></p>
+        <p>&lt;tr rowspan="列数"&gt;&lt;/tr&gt;：列方向の結合</p>
+        <p><b>&lt;tr rowspan="5"&gt;陸奥&lt;/tr&gt;</b></p>
+    </div>
+    <table>
+        <caption>旧国名・都道府県対照表</caption>
+        <tr>
+            <td colspan="2">旧国名</td>
+            <td>都道府県名</td>
+        </tr>
+        <tr>
+            <td rowspan="5">陸奥</td>
+            <td>陸奥</td>
+            <td>青森・岩手</td>
+        </tr>
+        <tr>
+            <td>陸中</td>
+            <td>岩手・秋田</td>
+        </tr>
+        <tr>
+            <td>陸前</td>
+            <td>岩手・宮城</td>
+        </tr>
+        <tr>
+            <td>岩城</td>
+            <td>宮城・福島</td>
+        </tr>
+        <tr>
+            <td>岩代</td>
+            <td>福島</td>
+        </tr>
+        <tr>
+            <td rowspan="2">出羽</td>
+            <td>羽後</td>
+            <td>秋田・山形</td>
+        </tr>
+        <tr>
+            <td>羽前</td>
+            <td>山形</td>
+        </tr>
+    </table>
+    <br>
+    <h2>インラインフレーム</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/H_BtvBabcgY?si=7DzrhFeYsrZFn8-L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <br>
+    <h2>引用</h2>
+    <p><q>うたかた</q>：&lt;q&gt;</p>
+    <blockquote>
+        知らないうちにそこにあった
+        ただ押し寄せるあなたへの想い
+        胸は満ちて息が苦しい
+        どうか恋よ散らないでいて
+        還る場所はないはずだから<br>
+        &lt;blockquote&gt;
+    </blockquote>
+    <p><cite>ポルノグラフィティ</cite>：&lt;cite&gt;</p>
+    
+    <br>
+    <h1>CSS</h1>
+    <p id="gothic">遊ゴシック</p>
+    <p id="mintyo">遊明朝体</p>
+
+    <h2>text-aline</h2>
+    <div id="text-aline">
+        <p id="left">text-aline:left</p>
+        <p id="center">text-aline:center</p>
+        <p id="right">text-aline:right</p>
+        <p id="justify">text-aline:justify</p>
+    </div>
+
+    <h1>JavaScript</h1>
+    <button id="btn" onclick="click()">click</button>
+    <br>
+
+    <div id="onclickTest">
+        <p id="changeText">テキストの色変更</p>
+        <button id="redButton">RED</button>
+        <button id="blueButton">BLUE</button>
+        <button id="changeButton">CHANGE</button>
+    </div>
+    <br>
+
+    <input type="text" id="inputText" placeholder="文字を入力">
+    <button id="addButton">追加</button>
+    <ul id="outputList"></ul>
+
+
+    
+    <script src="JS/zangai.js"></script>
+    
+</body>
+</html>
